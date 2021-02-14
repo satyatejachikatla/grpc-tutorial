@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+service calculate {
+  rpc add (NumbersList) returns (Answer) {}
+  rpc addtwo (TwoNumbers) returns (Answer) {}
+  rpc sub (TwoNumbers) returns (Answer) {}
+  rpc mul (NumbersList) returns (Answer) {}
+  rpc multwo (TwoNumbers) returns (Answer) {}
+  rpc div (TwoNumbers) returns (Answer) {}
+}
+
+
+message NumbersList {
+  repeated int32 data = 1;
+}
+
+message TwoNumbers {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message Answer {
+  int32 ans = 1;
+}
