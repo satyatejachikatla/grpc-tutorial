@@ -1,4 +1,23 @@
-# Calculator with grpc 
+# Calculator with grpc
+
+### Env & Build
+```
+./env.sh
+pip3 install -r requirements.txt
+./make.sh
+```
+
+### Run Server
+```
+cd stage
+python3 server.py
+```
+
+### Run Client
+```
+cd stage
+python3 client.py
+```
 
 ### References
 
